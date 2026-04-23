@@ -1,0 +1,269 @@
+<html>
+<head>
+    <title>ANIMACION 3 CSS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .contenedor{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative; /* para centrar el div */
+            margin: 0 auto; /* para centrar el div */
+            overflow: hidden;/*muestra solo lo interior*/
+            background-color: black;
+        }
+        .cuadri{
+            width: 100px;
+            height: 100px;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 50px;
+            left: 150px;
+            animation: cohete 1s infinite alternate ease-in;
+        }
+        .cuadrito{
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 50px;
+            left: -100px;
+            animation: cuadrito 4.5s infinite ease-in;
+        }
+        .cuadrito1{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 100px;
+            left: -100px;
+            animation: cuadrito 4s infinite ease-in;
+        }
+
+        .cuadrito2{
+            width: 6px;
+            height: 6px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 150px;
+            left: -100px;
+            animation: cuadrito 10s infinite ease-in;
+        }
+
+        .cuadrito3{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 20px;
+            left: -100px;
+            animation: cuadrito 6s infinite ease-in;
+        }
+
+        .cuadrito4{
+            width: 6px;
+            height: 6px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 80px;
+            left: -100px;
+            animation: cuadrito 8s infinite ease-in;
+        }
+
+        .cuadrito5{
+            width: 10px;
+            height:10px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 63px;
+            left: -100px;
+            animation: cuadrito 9s infinite ease-in;
+        }
+
+        .cuadrito6{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 50px;
+            left: -100px;
+            animation: cuadrito 2s infinite ease-in;
+        }
+
+        .cuadrito7{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 50px;
+            left: -100px;
+            animation: cuadrito 7s infinite ease-in;
+        }
+
+        .cuadrito8{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 25px;
+            left: -100px;
+            animation: cuadrito 3s infinite ease-in;
+        }
+
+        .cuadrito9{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 74px;
+            left: -100px;
+            animation: cuadrito 5s infinite ease-in;
+        }
+
+        .cuadrito10{
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            position: absolute;/* permite mover el div dentro del contenedor */
+            top: 180px;
+            left: -100px;
+            animation: cuadrito 2.5s infinite ease-in;
+        }
+
+        @keyframes cuadrito{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito1{
+            from{
+                left: 0px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito2{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito3{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito4{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito5{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito6{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito7{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito8{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito9{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cuadrito10{
+            from{
+                left: -100px
+            }
+            to{
+                left: 500px;
+            }
+        }
+
+        @keyframes cohete {
+            from{
+                rotate: -150deg;
+            }
+            to{
+                rotate: -125deg;
+            }
+        }
+        .cuadri img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="cuadri">
+            <img src="img/cohete.png" alt="">
+        </div>
+        <div class="cuadrito"></div>
+        <div class="cuadrito1"></div>
+        <div class="cuadrito2"></div>
+        <div class="cuadrito3"></div>
+        <div class="cuadrito4"></div>
+        <div class="cuadrito5"></div>
+        <div class="cuadrito6"></div>
+        <div class="cuadrito7"></div>
+        <div class="cuadrito8"></div>
+        <div class="cuadrito9"></div>
+        <div class="cuadrito10"></div>
+
+    </div>
+
+</body>
+</html>
