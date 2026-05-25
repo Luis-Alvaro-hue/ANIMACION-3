@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animación Cometa Cinemática - Mejorada</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contenedor{
+            width: 770px;
+            height: 480px;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+        }
+        .cielo{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(img/cielo.png);
+            animation: POV 6s ease forwards;
+        }
+        .sombra{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            z-index: 20;
+            animation: APARECER 5s forwards;
+            pointer-events: none;
+        }.mano{
+            width: 250px;
+            height: 250px;
+            background-image: url(img/MANO.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 200px;
+            bottom: -80px;
+            z-index: 10;
+            animation: MANO 6s ease forwards;
+        }.cometa{
+            width: 150px;
+            height: 150px;
+            background-image: url(img/COMETA.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 350px;
+            bottom: 120px;
+            z-index: 8;
+            animation: COMETA 8s ease-in-out forwards;
+        }.avion{
+            width: 120px;
+            height: 120px;
+            background-image: url(img/AVION.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 40px;
+            right: -250px;
+            opacity: 0.85;
+            animation: AVION 12s linear infinite;
+        }
+        .nube1{
+            width: 150px;
+            height: 100px;
+            top: 30px;
+            left: -250px;
+            position: absolute;
+            opacity: 0.85;
+            background-image: url(img/NUBE1.png);
+            background-size: contain;
+            animation: NUBE 20s linear infinite;
+        }
+        .nube2{
+            width: 120px;
+            height: 80px;
+            top: 140px;
+            left: -300px;
+            position: absolute;
+            opacity: 0.85;
+            background-image: url(img/NUBE2.png);
+            background-size: contain;
+            animation: NUBE 25s linear infinite;
+            animation-delay: 2s;
+        }
+        .nube3{
+            width: 180px;
+            height: 120px;
+            top: 220px;
+            left: -280px;
+            position: absolute;
+            opacity: 0.85;
+            background-image: url(img/NUBE3.png);
+            background-size: contain;
+            animation: NUBE 28s linear infinite;
+            animation-delay: 5s;
+        }
+        .nube4{
+            width: 100px;
+            height: 70px;
+            top: 80px;
+            left: -220px;
+            position: absolute;
+            opacity: 0.85;
+            background-image: url(img/NUBE4.png);
+            background-size: contain;
+            animation: NUBE 18s linear infinite;
+            animation-delay: 8s;
+        }
+        .btn-regresar{
+            display: block;
+            width: 260px;
+            margin: 25px auto;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(135deg,#2563eb,#38bdf8);
+            color: white;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+        
+        .btn-regresar:hover{
+            transform: translateY(-4px);
+            background: linear-gradient(135deg,#1d4ed8,#0ea5e9);
+        }
+        @keyframes APARECER{
+            from { 
+                opacity: 10; 
+            }
+            to { 
+                opacity: 0;
+            }
+        }
+        @keyframes POV{
+            0% {
+                scale: 1.2;
+            }
+            100% {
+                scale: 1;
+            }
+        }
+        @keyframes MANO{
+            0% { 
+                scale: 1.4;
+                translateY: 40px; 
+            }
+            100% { 
+                scale: 1;
+                translateY: 0; 
+            }
+        }
+        @keyframes COMETA{
+            0% { 
+                translate: (0, 0);
+                scale: (2);
+                rotate: (0deg); 
+            }
+            30% {
+                transform:
+                translate(30px, -40px)
+                scale(1) 
+                rotate(15deg);
+            }
+            60% { 
+                transform:
+                translate(80px, -100px)
+                scale(0.8)
+                rotate(-5deg); 
+            }
+            100% { 
+                transform:
+                translate(218px, -240px)
+                scale(0.6)
+                rotate(10deg); 
+            }
+        }
+        @keyframes AVION{
+            0% { 
+                right: -250px; 
+                top: 100px; 
+                scale: 0.8;
+                rotate: -10deg;
+            }
+            100% { 
+                right: 900px; 
+                top: -20px; 
+                scale: 0.6;
+                rotate: 10deg;
+            }
+        }
+        @keyframes NUBE{
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(1200px);
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cielo"></div>
+        <div class="nube1"></div>
+        <div class="nube2"></div>
+        <div class="nube3"></div>
+        <div class="nube4"></div>
+        <div class="avion"></div>
+        <div class="cometa"></div>
+        <div class="mano"></div>
+        <div class="sombra"></div>
+    </div>
+    <a href="index.html" class="btn-regresar">VOLVER AL INICIO</a>
+</body>
+</html>

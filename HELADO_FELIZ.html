@@ -1,0 +1,65 @@
+@keyframes APARECER{
+            from { 
+                opacity: 10; 
+            }
+            to { 
+                opacity: 0;
+            }
+        }
+        @keyframes POV{
+            0% {
+                scale: 1.2;
+            }
+            100% {
+                scale: 1;
+            }
+        }
+        @keyframes MANO{
+            0% { 
+                scale: 1.4;
+                translateY: 40px; 
+            }
+            100% { 
+                scale: 1;
+                translateY: 0; 
+            }
+        }
+        @keyframes COMETA{
+            0% { 
+                translate: (0, 0);
+                scale: (2);
+                rotate: (0deg); 
+            }
+            30% {
+                transform:
+                translate(30px, -40px)
+                scale(1) 
+                rotate(15deg);
+            }
+            60% { 
+                transform:
+                translate(80px, -100px)
+                scale(0.8)
+                rotate(-5deg); 
+            }
+            100% { 
+                transform:
+                translate(218px, -240px)
+                scale(0.6)
+                rotate(10deg); 
+            }
+        }
+        @keyframes AVION{
+            0% { 
+                right: -250px; 
+                top: 100px; 
+                scale: 0.8;
+                rotate: -10deg;
+            }
+            100% { 
+                right: 900px; 
+                top: -20px; 
+                scale: 0.6;
+                rotate: 10deg;
+            }
+        }
