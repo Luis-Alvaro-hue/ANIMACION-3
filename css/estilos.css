@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+svg{
+    position: absolute;
+    z-index: 999;
+    top: 700px;
+    left: 0;
+}
+
+svg path{
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: textAnimation 10s ease forwards;
+}
+@keyframes textAnimation{
+    0%{
+        fill: transparent;
+        stroke-dashoffset: 2000;
+    }
+    80%{
+        fill: transparent;
+    }
+    100%{
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
+.contenedor{
+    width: 500px;
+    height: 800px;
+    border: 1px solid white;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.cielo{
+    position: absolute;
+    left:-200px;
+    top:-50px;
+    z-index: 1;
+    animation: cielo 12s 1 forwards;
+}
+@keyframes cielo{
+    from{
+        scale: 100%;
+        filter: blur(5px);
+    }
+    to{
+        scale: 130%;
+        filter: blur(0px);
+    }
+}
+
+.montaña{
+    position: absolute;
+    left:-600px;
+    z-index: 1;
+    animation: montaña 10s 1 forwards;
+}
+@keyframes montaña{
+    from{
+        top: 0px;
+        scale: 100%;
+        filter: blur(4px);
+    }
+    to{
+        top:-100px;
+        scale: 105%;
+        filter: blur(0px);
+    }
+}
+
+.persona{
+    position: absolute;
+    width: 800px;
+    left: -150px;
+    top: 300px;
+    z-index: 1;
+    animation: persona 10s 1 forwards;
+}
+@keyframes persona{
+    from{
+        scale: 85%;
+    }
+    to{
+        scale: 105%;
+    }
+}
+
+.neblina{
+    position: absolute;
+    width: 1000px;
+    left: -150px;
+    top: 400px;
+    z-index: 1;
+    animation: neblina 10s 1 forwards;
+}
+@keyframes neblina{
+    from{
+        left: 0px;
+        scale: 100%;
+    }
+    to{
+        left: -1000px;
+        scale: 100%;
+    }
+}
