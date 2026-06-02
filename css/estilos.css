@@ -114,3 +114,20 @@ svg path{
         scale: 100%;
     }
 }
+.btn-regresar{
+    display: block;
+    width: 260px;
+    margin: 25px auto;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(135deg,#2563eb,#38bdf8);
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+.btn-regresar:hover{
+    transform: translateY(-4px);
+    background: linear-gradient(135deg,#1d4ed8,#0ea5e9);
+}
