@@ -1,21 +1,82 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>ANIMACION 3 CSS</title>
-    <style>
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú de Animaciones</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(img/FONDO\ CIELO.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.contenedor{
+    width:700px;
+    min-height:600px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    text-align:center;
+}
+h1{
+    color:black;
+    margin-bottom:30px;
+    font-size:36px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.3);
+}
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+.menu a{
+    text-decoration:none;
+    color:blue;
+    background:rgba(255,255,255,0.2);
+    padding:18px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.2);
+}
+.menu a:hover{
+    background:white;
+    color:#1e3c72;
+    transform:translateX(8px);
+    box-shadow:0 5px 15px rgba(255,255,255,0.3);
+}
+</style>
 </head>
 <body>
-<h1>ANIMACION CSS3 - MOVIMIENTO</h1>
-<a href="animacion1.html">Movimiento Horizontal</a><br>
-<a href="animacion2.html">Movimiento Vertical</a><br>
-<a href="animacion3.html">Movimiento Diagonal</a><br>
-<a href="animacion4.html">MEGAMAN</a><br>
-<a href="animacion5.html">COEHTE</a><br>
-<a href="bebida.HTML">BEBIDA DE COCO Y VAINILLA</a><br>
-<a href="tecnologiasdw.html">TECNOLOGIAS DW</a><br>
-<a href="VOLANDO_UNA_COMETA.html">VOLANDO UNA COMETA</a><br>
-<a href="PAISAJE.html">ANIMACION PAISAJE</a><br>
+<div class="contenedor">
+    <h1>MENU DE ANIMACIONES - ANIMACION DE GRAFICOS</h1>
+    <div class="menu">
+        <a href="animacion1.html">Movimiento Horizontal</a>
+        <a href="animacion2.html">Movimiento Vertical</a>
+        <a href="animacion3.html">Movimiento Diagonal</a>
+        <a href="animacion4.html">MEGAMAN</a>
+        <a href="animacion5.html">COHETE</a>
+        <a href="bebida.HTML">Bebida de Coco y Vainilla</a>
+        <a href="tecnologiasdw.html">Tecnologías DW</a>
+        <a href="VOLANDO_UNA_COMETA.html">Volando una Cometa</a>
+        <a href="PAISAJE.html">Animación Paisaje</a>
+    </div>
+</div>
 </body>
 </html>
